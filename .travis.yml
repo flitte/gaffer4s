@@ -9,3 +9,5 @@ script:
 cache:
   directories:
   - $HOME/.m2
+after_success:
+- ./gradlew cobertura coveralls
